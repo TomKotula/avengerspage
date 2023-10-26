@@ -1,13 +1,22 @@
-let navButton = document.querySelector(".navButton");
-let body = document.querySelector(".body");
-let lightMode = document.querySelector(".lightMode");
-
-navButton.addEventListener("click", () => {
-    body.classList.toggle("dark");
-
-    if (body.classList.contains("dark")) {
-        lightMode.innerText = "Light";
-    } else {
-        lightMode.innerText = "Dark";
+{
+    const welcome = () => {
+        console.log("Witam wszystkich developerów, którzy tutaj zaglądają");
     }
-});
+
+    const toggleBackground = () => {
+        const body = document.querySelector(".body");
+        const lightMode = document.querySelector(".lightMode");
+        
+        body.classList.toggle("dark");
+        lightMode.innerText = body.classList.contains("dark") ? "Light" : "Dark";
+    };
+
+    const init = () => {
+        const navButton = document.querySelector(".navButton");
+        navButton.addEventListener("click", toggleBackground);
+
+        welcome();
+    };
+
+    init();
+}
