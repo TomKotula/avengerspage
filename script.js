@@ -8,7 +8,7 @@
         const lightMode = document.querySelector(".lightMode");
         
         body.classList.toggle("dark");
-        lightMode.innerText = body.classList.contains("dark") ? "Light" : "Dark";
+        lightMode.innerText = body.classList.contains("dark") ? "☀️" : "🌙";
     };
 
     const init = () => {
