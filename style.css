@@ -14,8 +14,8 @@ html {
 }
 
 .body {
-    background-color: antiquewhite;
-    font-family: "Kanit", sans-serif;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .dark {
@@ -89,7 +89,6 @@ html {
 
 
 #preMain {
-    background-color: #f4e5d0;
     overflow: hidden;
     padding-left: 2%;
     padding-right: 2%;
@@ -175,16 +174,11 @@ html {
     font-weight: normal;
 }
 
-.tableRow:nth-child(even) {
-    background-color: #f4e5d0;
-}
-
 .tableRow:hover {
     background-color: #E6E6E6;
 }
 
 #section {
-    background-color: #f4e5d0;
     padding-left: 2%;
     padding-right: 2%;
     overflow: hidden;
