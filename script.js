@@ -12,7 +12,7 @@
     };
 
     const init = () => {
-        const navButton = document.querySelector(".navButton");
+        const navButton = document.querySelector(".navigation__button");
         navButton.addEventListener("click", toggleBackground);
 
         welcome();
