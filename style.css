@@ -18,8 +18,8 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
-.dark {
-    background-color: black;
+.gray {
+    background-color: #dcdcdc;
 }
 
 .black {
@@ -27,8 +27,8 @@ html {
 }
 
 .navigation {
-    background-color: #2991c0;
-    padding: 25px;
+    background-color: #6A7FAB;
+    padding: 20px;
     position: sticky;
     top: 0;
 }
@@ -58,7 +58,6 @@ html {
     font-family: "Kanit", sans-serif;
     padding: 10px;
     border-radius: 5px;
-    color: #2991c0;
     border-color: white;
 }
 
@@ -81,7 +80,7 @@ html {
 }
 
 .headerH1 {
-    color: #2991c0;
+    color: #6A7FAB;
     font-size: 100px;
 }
 
@@ -105,7 +104,7 @@ html {
 }
 
 .preMainH2 {
-    color: #2991c0;
+    color: #6A7FAB;
     font-size: 50px;
     margin: 30px;
 }
@@ -125,7 +124,7 @@ html {
 }
 
 .preMainH3 {
-    color: #2991c0;
+    color: #6A7FAB;
     font-size: 50px;
 }
 
@@ -144,7 +143,7 @@ html {
 }
 
 .mainH3 {
-    color: #2991c0;
+    color: #6A7FAB;
     font-size: 50px;
     text-align: center;
     margin-top: 30px;
@@ -167,7 +166,7 @@ html {
 }
 
 .tableHeader {
-    background-color: #2991c0;
+    background-color: #6A7FAB;
     color: white;
     font-weight: normal;
 }
@@ -185,7 +184,7 @@ html {
 }
 
 .sectionH3 {
-    color: #2991c0;
+    color: #6A7FAB;
     font-size: 50px;
     text-align: center;
     margin-bottom: 30px;
@@ -219,7 +218,7 @@ html {
 }
 
 .footerH4 {
-    color: #2991c0;
+    color: #6A7FAB;
     font-size: 50px;
     margin-bottom: 30px;
 }
@@ -247,7 +246,7 @@ html {
     margin: 30px;
     font-size: 20px;
     color: white;
-    background-color: #2991c0;
+    background-color: #6A7FAB;
     text-decoration: none;
     border-radius: 10px;
     font-family: "Kanit", sans-serif;
