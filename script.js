@@ -1,14 +1,14 @@
 {
     const welcome = () => {
-        console.log("Witam wszystkich developerów, którzy tutaj zaglądają");
+        console.log("Hello everyone!");
     }
 
     const toggleBackground = () => {
         const body = document.querySelector(".body");
         const lightMode = document.querySelector(".lightMode");
         
-        body.classList.toggle("dark");
-        lightMode.innerText = body.classList.contains("dark") ? "☀️" : "🌙";
+        body.classList.toggle("gray");
+        lightMode.innerText = body.classList.contains("gray") ? "☀️" : "🌙";
     };
 
     const init = () => {
