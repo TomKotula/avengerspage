@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -73,15 +74,16 @@ html {
     text-align: center;
 }
 
-.headerImg {
+.header__image {
     border-radius: 10px;
     margin-top: 20px;
     max-width: 100%;
 }
 
-.headerH1 {
+.header__header {
     color: #6A7FAB;
     font-size: 100px;
+    max-width: 100%;
 }
 
 
