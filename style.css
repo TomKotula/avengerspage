@@ -156,41 +156,42 @@ html {
 }
 
 #main {
-    padding-left: 2%;
-    padding-top: 15px;
+    padding-top: 100px;
 }
 
-.mainH3 {
+.main__header {
     color: #6A7FAB;
     font-size: 50px;
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.mainTable {
+.main__table {
     border-collapse: collapse;
     width: 60%;
     margin: 0 auto;
-    margin-bottom: 70px;
     overflow-x: auto;
 }
 
-.tableCell {
+.table__row:hover {
+    background-color: #E6E6E6;
+}
+
+.table__cell {
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
     vertical-align: middle;
 }
 
-.tableHeader {
+.table__cell--phase {
+    color: #b3b3b3;
+}
+
+.table__header {
     background-color: #6A7FAB;
     color: white;
     font-weight: normal;
-}
-
-.tableRow:hover {
-    background-color: #E6E6E6;
 }
 
 #section {
