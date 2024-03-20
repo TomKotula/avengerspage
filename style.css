@@ -124,6 +124,10 @@ html {
     display: grid;
 }
 
+.aside__block--first {
+    height: 75vh;
+}
+
 .aside__header {
     color: #6A7FAB;
     font-size: 50px;
