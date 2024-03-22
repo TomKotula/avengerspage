@@ -242,37 +242,50 @@ html {
     padding: 15px;
 }
 
-#footer {
-    padding-left: 2%;
-    padding-right: 2%;
+#gallery {
+    padding-top: 100px;
     text-align: center;
-    margin: 30px;
-    padding-top: 15px;
 }
 
-.footerH4 {
+.gallery__header {
     color: #6A7FAB;
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.footerImg {
-    max-width: 15%;
-    border-radius: 10px;
-    margin-bottom: 30px;
+.gallery__photos {
+    transition: 0.3s;
+    width: 350px;
+    height: 200px;
+    border-radius: 5px;
 }
 
-.footerImg:hover {
-    transform: scale(X);
-    scale: 1.2;
+.gallery__photos:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.footerP {
-    max-width: 100%;
-    padding-left: 20%;
-    padding-right: 20%;
-    margin: 20px;
-    font-size: 20px;
+.cursor {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal__content {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.footer {
+    background-color: #ccc;
 }
 
 .footerInfo {
