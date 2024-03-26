@@ -45,14 +45,23 @@ html {
 .navigation__listItem {
     color: #ffffff;
     text-decoration: none;
+    position: relative;
 }
 
-.navigation__listItem:hover {
-    color: #dbdbdb;
+.navigation__listItem::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
-.navigation__listItem:active {
-    color: #c4c3c3;
+.navigation__listItem:hover::after {
+    transform: scaleX(1);
 }
 
 .navigation__button {
