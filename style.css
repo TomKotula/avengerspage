@@ -285,40 +285,24 @@ html {
 }
 
 .footer {
-    background-color: #ccc;
+    padding: 20px;
 }
 
-.footerInfo {
-    margin: 30px;
-    font-size: 20px;
-    color: white;
-    background-color: #6A7FAB;
-    text-decoration: none;
-    border-radius: 10px;
-    font-family: "Kanit", sans-serif;
-    border: none;
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
 }
 
-.footerInfo:hover {
-    background-color: #ccc;
-}
-
-.footerContact {
-    font-size: 20px;
-    border-radius: 15px;
-    font-family: "Kanit", sans-serif;
-    text-decoration: none;
+.footer__media {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
     margin: 20px;
 }
 
-.footerIcons {
-    margin: 20px;
-}
-
-.footerIcons:hover {
-    background-color: #ccc;
-}
-
-.copyright {
-    margin: 20px;
+.footer__copyright {
+    display: flex;
+    justify-content: center;
 }
