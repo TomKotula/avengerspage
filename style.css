@@ -426,6 +426,7 @@ html {
 @media (max-width: 600px) {
   .iframe__container {
     padding: 0px;
+    padding-top: 30px;
   }
 }
 
