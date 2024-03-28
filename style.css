@@ -411,13 +411,6 @@ html {
   }
 }
 
-@media (max-width: 600px) {
-  .modal__slides img {
-    width: 100%;
-    height: auto;
-  }
-}
-
 .iframe__container {
   text-align: center;
   padding: 50px;
