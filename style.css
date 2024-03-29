@@ -214,7 +214,7 @@ html {
 
 @media (min-width: 601px) and (max-width: 1024px) {
   .aside__header {
-    margin-bottom: 30px
+    margin-bottom: 30px;
   }
 }
 
@@ -420,7 +420,7 @@ html {
 
 @media (min-width: 601px) and (max-width: 1024px) {
   .gallery__photos {
-    width: 45%;;
+    width: 45%;
   }
 }
 
@@ -446,12 +446,19 @@ html {
 @media (max-width: 600px) {
   .modal {
     left: 0px;
+    padding-top: 50px;
   }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
   .modal {
     left: 0px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .modal {
+    padding-top: 50px;
   }
 }
 
@@ -463,6 +470,8 @@ html {
 @media (max-width: 600px) {
   .modal__content {
     width: 90%;
+    max-width: 100%;
+    margin: 0;
   }
 }
 
@@ -472,6 +481,15 @@ html {
   }
 }
 
+@media (min-width: 1025px) {
+  .modal__content {
+    max-width: 80%;
+  }
+  .modal__slides img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .iframe__container {
   text-align: center;
