@@ -119,6 +119,12 @@ html {
   }
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
+  .wrapper {
+    padding: 20px;
+  }
+}
+
 .header {
   text-align: center;
 }
@@ -189,6 +195,12 @@ html {
   height: 75vh;
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
+  .aside__block--first {
+    height: 50vh;
+  }
+}
+
 .aside__header {
   color: #6a7fab;
   font-size: 50px;
@@ -197,6 +209,12 @@ html {
 @media (max-width: 600px) {
   .aside__header {
     font-size: 40px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .aside__header {
+    margin-bottom: 30px
   }
 }
 
@@ -223,6 +241,12 @@ html {
   color: #6a7fab;
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
+  .aside__paragraph--name {
+    margin-top: 30px;
+  }
+}
+
 .aside__content {
   font-size: 20px;
   text-align: justify;
@@ -235,6 +259,12 @@ html {
 @media (max-width: 600px) {
   .aside__content {
     width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .aside__content {
+    width: 90%;
   }
 }
 
@@ -265,6 +295,12 @@ html {
 @media (max-width: 600px) {
   .main__table {
     width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .main__table {
+    width: 90%;
   }
 }
 
@@ -317,6 +353,12 @@ html {
   .section__list {
     list-style-type: none;
     padding: 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .section__list {
+    padding: 0px 7% 0px 10%;
   }
 }
 
@@ -376,6 +418,12 @@ html {
   }
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
+  .gallery__photos {
+    width: 45%;;
+  }
+}
+
 .gallery__photos:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -401,6 +449,12 @@ html {
   }
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
+  .modal {
+    left: 0px;
+  }
+}
+
 .modal__content {
   margin: 0 auto;
   max-width: 60%;
@@ -411,6 +465,13 @@ html {
     width: 90%;
   }
 }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .modal__content {
+    max-width: 100%;
+  }
+}
+
 
 .iframe__container {
   text-align: center;
