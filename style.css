@@ -393,6 +393,13 @@ html {
   text-align: center;
 }
 
+@media (min-width: 1025px) {
+  #gallery {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+
 .gallery__header {
   color: #6a7fab;
   font-size: 50px;
@@ -458,6 +465,7 @@ html {
 
 @media (min-width: 1025px) {
   .modal {
+    left: 0%;
     padding-top: 50px;
   }
 }
