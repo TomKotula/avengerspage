@@ -31,6 +31,7 @@ html {
   padding: 20px;
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
 
 @media (max-width: 600px) {
@@ -164,6 +165,20 @@ input:checked + .slider:before {
   border-radius: 10px;
   margin-top: 20px;
   max-width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  animation: twinkle 2s ease-in-out alternate;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .header__header {
@@ -548,6 +563,7 @@ input:checked + .slider:before {
   width: 800px;
   height: 450px;
   border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .footer {
@@ -566,6 +582,7 @@ input:checked + .slider:before {
   width: 50px;
   border-radius: 5px;
   margin: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .footer__copyright {
