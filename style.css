@@ -16,11 +16,14 @@ html {
 
 .body {
   background-color: #ffffff;
+  color: black;
   font-family: "Open Sans", sans-serif;
+  transition: background-color 0.5s, color 0.5s;
 }
 
-.gray {
-  background-color: #dcdcdc;
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
 }
 
 .navigation {
@@ -85,15 +88,12 @@ html {
   }
 }
 
-.navigation__button {
-  font-family: "Kanit", sans-serif;
+.navigation__switch {
   padding: 10px;
-  border-radius: 5px;
-  border-color: white;
 }
 
 @media (max-width: 600px) {
-  .navigation__button {
+  .navigation__switch {
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -101,12 +101,47 @@ html {
   }
 }
 
-.navigation__button:hover {
-  background-color: #e6e6e6;
+.theme__switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 35px;
 }
 
-.navigation__button:active {
-  background-color: #d6d6d6;
+.theme__switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.5s;
+  border-radius: 35px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(25px);
 }
 
 @media (max-width: 600px) {
@@ -301,7 +336,7 @@ html {
 }
 
 .table__row:hover {
-  background-color: #e6e6e6;
+  background-color: #b3b3b3;
 }
 
 .table__cell {

@@ -1,55 +1,46 @@
 {
-    const welcome = () => {
-        console.log("Hello everyone!");
-    }
+  const toggleDarkMode = () => {
+    document.body.classList.toggle("dark-mode");
+  };
 
-    const toggleBackground = () => {
-        const body = document.querySelector(".body");
-        const lightMode = document.querySelector(".lightMode");
+  document
+    .getElementById("checkbox")
+    .addEventListener("change", toggleDarkMode);
 
-        body.classList.toggle("gray");
-        lightMode.innerText = body.classList.contains("gray") ? "☀️" : "🌙";
+  function openModal() {
+    var modal = document.getElementById("lightboxModal");
+    modal.style.display = "block";
+
+    modal.onclick = function (event) {
+      if (event.target == modal) {
+        closeModal();
+      }
     };
+  }
 
-    const init = () => {
-        const navButton = document.querySelector(".navigation__button");
-        navButton.addEventListener("click", toggleBackground);
+  function closeModal() {
+    document.getElementById("lightboxModal").style.display = "none";
+  }
 
-        welcome();
-    };
+  var slideIndex = 1;
+  showSlides(slideIndex);
 
-    function openModal() {
-        var modal = document.getElementById('lightboxModal');
-        modal.style.display = "block";
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
 
-        modal.onclick = function (event) {
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("modal__slides");
+    if (n > slides.length) {
+      slideIndex = 1;
     }
-
-    function closeModal() {
-        document.getElementById('lightboxModal').style.display = "none";
+    if (n < 1) {
+      slideIndex = slides.length;
     }
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
     }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("modal__slides");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slideIndex - 1].style.display = "block";
-    }
-    
-    init();
+    slides[slideIndex - 1].style.display = "block";
+  }
 }
